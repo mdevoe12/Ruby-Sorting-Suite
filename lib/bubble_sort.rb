@@ -11,11 +11,13 @@ class BubbleSort
   def sort
     input.each_with_index do |val, index|
       next_val = input[index + 1]
+      next_val_index = index + 1
       return sorted unless next_val
       if val > next_val
-        puts 'move'
+        input[index] = next_val
+        input[next_val_index] = val
       else
-        puts "don't move"
+        next
       end
     end
   end
