@@ -14,10 +14,4 @@ class BubbleSort
     #
     # end
   end
-
-  def swap
-
-  end
 end
-
-BubbleSort.new([4, 2, 3, 1]).sort
