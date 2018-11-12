@@ -9,5 +9,4 @@ class BubbleSortTest < Minitest::Test
 
     assert_equal b_s.input, [1, 2, 3, 4]
   end
-
 end

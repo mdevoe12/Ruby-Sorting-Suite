@@ -5,17 +5,18 @@ class BubbleSort
 
   def initialize(array)
     @input = array
-    @output = []
   end
 
   def sort
-    input.each_with_index do |val, index|
+    return @input if @input.length <= 1
 
-    end
+    # @input.each_with_index do |char, index|
+    #
+    # end
   end
 
-  def sorted
-    puts input
+  def swap
+
   end
 end
 
