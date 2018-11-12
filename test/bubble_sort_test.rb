@@ -25,7 +25,14 @@ class BubbleSortTest < Minitest::Test
   def test_it_moves_biggest_from_first_to_last
     b_s = BubbleSort.new([4, 3, 2, 1])
     b_s.sort
-    
-    assert_equal b_s.array, [3, 2, 1, 4]
+
+    assert_equal b_s.array[-1], 4
+  end
+
+  def test_it_sorts_array_of_numbers
+    b_s = BubbleSort.new([4, 3, 2, 1])
+    b_s.sort
+
+    assert_equal b_s.array, [1, 2, 3, 4]
   end
 end
