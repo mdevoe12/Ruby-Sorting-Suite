@@ -22,6 +22,5 @@ class BubbleSort
 
       break unless swapped
     end
-
   end
 end

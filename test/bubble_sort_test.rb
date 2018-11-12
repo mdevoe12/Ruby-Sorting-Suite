@@ -35,4 +35,11 @@ class BubbleSortTest < Minitest::Test
 
     assert_equal b_s.array, [1, 2, 3, 4]
   end
+
+  def test_it_sorts_array_of_strings
+    b_s = BubbleSort.new(['d', 'c', 'a', 'b'])
+    b_s.sort
+
+    assert_equal b_s.array, ['a', 'b', 'c', 'd']
+  end
 end
