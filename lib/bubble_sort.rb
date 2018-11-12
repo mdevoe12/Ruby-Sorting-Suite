@@ -1,17 +1,23 @@
 require 'pry'
 
 class BubbleSort
-  attr_reader :input
+  attr_reader :array
 
   def initialize(array)
-    @input = array
+    @array = array
   end
 
   def sort
-    return @input if @input.length <= 1
+    size = array.length - 1
 
-    # @input.each_with_index do |char, index|
-    #
-    # end
+    return array if array.length <= 1
+
+    size.times do |i|
+      if array[i] > array[i + 1]
+        array[i], array[i + 1] = array[i + 1], array[i]
+      end
+    end
+
   end
+
 end
